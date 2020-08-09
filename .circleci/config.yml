@@ -31,7 +31,6 @@ jobs:
       - run: uname -a
       - run: go version
       - run: go env
-      - run:
       - run: go vet -v ./...
       - run:
           name: golint
