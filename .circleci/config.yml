@@ -59,7 +59,7 @@ jobs:
           name: Create coverage report
           command: |
                     mkdir -p /tmp/test-artifacts
-                    PATH=/tmp/sbin:$PATH go test -race -coverprofile=coverage.txt -covermode=atomic
+                    PATH=/tmp/sbin:$PATH go test -coverprofile=coverage.txt -covermode=atomic
                     go tool cover -html=coverage.txt -o coverage.html
                     mv coverage.html /tmp/test-artifacts
       - run:
