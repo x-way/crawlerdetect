@@ -28,4 +28,4 @@ func main() {
 
 ## Contributing
 The patterns and testcases are synced from the PHP repo.
-If you find a bot/spider/crawler user agent that crawlerdetect fails to detect, please submit a pull request with the regex pattern and a testcase to the upstream PHP repo: https://github.com/JayBizzle/Crawler-Detect
+If you find a bot/spider/crawler user agent that crawlerdetect fails to detect, please submit a pull request with the regex pattern and a testcase to the [upstream PHP repo](https://github.com/JayBizzle/Crawler-Detect).
