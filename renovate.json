@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "assignees": [
+    "x-way"
+  ],
+  "reviewers": [
+    "x-way"
+  ],
+  "labels": [
+    "renovate"
+  ],
+  "postUpdateOptions": [
+    "gomodTidy"
+  ],
+  "packageRules": [
+  ]
+}
