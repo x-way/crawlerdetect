@@ -49,6 +49,11 @@ jobs:
                     gofumports -d .
                     [ -z "$(gofumports -l .)" ]
       - run:
+          name: gosec
+          command: |
+                    go get github.com/securego/gosec/cmd/gosec
+                    gosec ./...
+      - run:
           name: Run go tests
           environment:
             GOTESTSUM_JUNITFILE: /tmp/test-reports/gotests/junit.xml
