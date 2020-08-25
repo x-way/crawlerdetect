@@ -32,3 +32,11 @@ func testFromFile(t *testing.T, filename string, want bool) {
 		log.Fatal(err)
 	}
 }
+
+func TestRegexpUpdate(t *testing.T) {
+	crawlerDetect := New()
+	// test with -race
+	go crawlerDetect.IsCrawler("foo")
+	crawlerDetect.SetCrawlers([]string{"bar"})
+	crawlerDetect.SetExclusions([]string{"baz"})
+}

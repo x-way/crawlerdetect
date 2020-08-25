@@ -22,6 +22,7 @@ package crawlerdetect
 import (
 	"regexp"
 	"strings"
+	"sync"
 )
 
 var defaultCrawlerDetect *CrawlerDetect
@@ -41,6 +42,7 @@ type CrawlerDetect struct {
 	crawlersRegex   *regexp.Regexp
 	exclusions      []string
 	exclusionsRegex *regexp.Regexp
+	m               sync.Mutex
 }
 
 // New creates a new CrawlerDetect instance with the default patterns
@@ -53,14 +55,18 @@ func New() *CrawlerDetect {
 
 // SetCrawlers sets a custom list of crawler patterns
 func (c *CrawlerDetect) SetCrawlers(crawlers []string) {
+	c.m.Lock()
 	c.crawlers = crawlers
 	c.compileCrawlers()
+	c.m.Unlock()
 }
 
 // SetExclusions sets a custom list of exclusion patterns
 func (c *CrawlerDetect) SetExclusions(exclusions []string) {
+	c.m.Lock()
 	c.exclusions = exclusions
 	c.compileExclusions()
+	c.m.Unlock()
 }
 
 func (c *CrawlerDetect) compileCrawlers() {
@@ -77,5 +83,7 @@ func (c *CrawlerDetect) excludeString(input string) string {
 
 // IsCrawler checks for a user agent string if it is a crawler
 func (c *CrawlerDetect) IsCrawler(input string) bool {
+	c.m.Lock()
+	defer c.m.Unlock()
 	return c.crawlersRegex.MatchString(c.excludeString(input))
 }
