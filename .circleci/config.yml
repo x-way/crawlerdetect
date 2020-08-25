@@ -51,6 +51,10 @@ jobs:
                     gofumports -d .
                     [ -z "$(gofumports -l .)" ]
       - run:
+          name: Run go tests with -race
+          command: |
+                    go test -run=TestRegexpUpdate -race ./...
+      - run:
           name: Run go tests
           environment:
             GOTESTSUM_JUNITFILE: /tmp/test-reports/gotests/junit.xml
