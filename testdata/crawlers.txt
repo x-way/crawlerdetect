@@ -3523,7 +3523,6 @@ php-requests/1.7
 nghttp2/1.40.0
 WinHTTP/1.1
 Mozilla/5.0 (compatible; Javelin; +https://about.javelin.io/)
-Amazon CloudFront
 swcd (unknown version) CFNetwork/1125.2 Darwin/19.4.0
 YahooMailProxy; https://help.yahoo.com/kb/yahoo-mail-proxy-SLN28749.html
 Mozilla/5.0 (Java) outbrain
@@ -3561,3 +3560,9 @@ Nuclei (@pdiscoveryio)
 myseosnapshot/1.0
 Contextual Code Sites Explorer
 Corax - support@coraxcyber.com
+Florienzh/1.0 
+BKCTwitterUnshortener/0.1 (Contact: systems@cyber.harvard.edu)
+Syndirella/0.91pre 
+PodcastAddict/v2 - Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G920F Build/MMB29K) 
+PDF24 URL To PDF
+MacOutlook/16.41.20091302 (Intelx64 Mac OS X 10.14.4 (Build 18E226))
