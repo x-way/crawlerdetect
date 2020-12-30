@@ -49,6 +49,6 @@ var exclusions = []string{
 	`; IDbot`,
 	`; ID bot`,
 	`; POWER BOT`,
-	`YandexSearch`,
 	`OCTOPUS-CORE`,
+	`YandexSearch`,
 }
