@@ -432,6 +432,7 @@ var crawlers = []string{
 	`Google PP Default`,
 	`Google Search Console`,
 	`Google Web Preview`,
+	`Google-Ads-Creatives-Assistant`,
 	`Google-Ads-Overview`,
 	`Google-Adwords`,
 	`Google-Apps-Script`,
