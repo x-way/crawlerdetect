@@ -4,7 +4,7 @@ workflows:
   build:
     jobs:
       - build-latest
-      - build-1.14
+      - build-1.16
       - build-1.15
   scheduled:
     triggers:
@@ -16,7 +16,7 @@ workflows:
                 - master
     jobs:
       - build-latest
-      - build-1.14
+      - build-1.16
       - build-1.15
 
 jobs:
@@ -74,10 +74,10 @@ jobs:
       - store_artifacts:
           path: /tmp/test-artifacts
 
-  build-1.14:
+  build-1.16:
     <<: *build-template
     docker:
-      - image: circleci/golang:1.14
+      - image: circleci/golang:1.16
 
   build-1.15:
     <<: *build-template
