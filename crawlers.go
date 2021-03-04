@@ -887,6 +887,7 @@ var crawlers = []string{
 	`postrank`,
 	`PowerPoint\/`,
 	`Prebid`,
+	`Prerender`,
 	`Priceonomics Analysis Engine`,
 	`PrintFriendly`,
 	`PritTorrent`,
