@@ -82,4 +82,4 @@ jobs:
   build-1.15:
     <<: *build-template
     docker:
-      - image: circleci/golang:1.15
+      - image: circleci/golang:1.16
