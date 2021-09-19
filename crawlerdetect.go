@@ -42,7 +42,7 @@ type CrawlerDetect struct {
 	crawlersRegex   *regexp.Regexp
 	exclusions      []string
 	exclusionsRegex *regexp.Regexp
-	m               sync.Mutex
+	m               sync.RWMutex
 }
 
 // New creates a new CrawlerDetect instance with the default patterns
@@ -83,7 +83,7 @@ func (c *CrawlerDetect) excludeString(input string) string {
 
 // IsCrawler checks for a user agent string if it is a crawler
 func (c *CrawlerDetect) IsCrawler(input string) bool {
-	c.m.Lock()
-	defer c.m.Unlock()
+	c.m.RLock()
+	defer c.m.RUnlock()
 	return c.crawlersRegex.MatchString(c.excludeString(input))
 }
