@@ -86,6 +86,7 @@ var crawlers = []string{
 	`alyze\.info`,
 	`amagit`,
 	`^Amazon Simple Notification Service Agent$`,
+	`^Amazon-Route53-Health-Check-Service`,
 	`Anarchie`,
 	`AndroidDownloadManager`,
 	`Anemone`,
