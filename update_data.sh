@@ -29,7 +29,6 @@ echo "Patching files for re2 engine"
 sed -i "" -e 's/`Yandex(?!Search)`/`Yandex`/' crawlers.go
 sed -i "" -e '/^}$/i\
 	`YandexSearch`,' exclusions.go
-sed -i "" -e 's/`YandexSearch`,/	&/' exclusions.go
 
 echo "Updating testdata/crawlers.txt"
 curl --progress-bar -o testdata/crawlers.txt https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/master/tests/crawlers.txt
