@@ -22,7 +22,7 @@ workflows:
 jobs:
   build-latest: &build-template
     docker:
-      - image: circleci/golang:latest
+      - image: cimg/go:latest
 
     steps:
       - checkout
@@ -77,9 +77,9 @@ jobs:
   build-1.18:
     <<: *build-template
     docker:
-      - image: circleci/golang:1.18
+      - image: cimg/go:1.18
 
   build-1.17:
     <<: *build-template
     docker:
-      - image: circleci/golang:1.17
+      - image: cimg/go:1.17
