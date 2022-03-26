@@ -3,7 +3,6 @@ workflows:
   version: 2
   build:
     jobs:
-      - build-latest
       - build-1.18
       - build-1.17
   scheduled:
@@ -15,14 +14,13 @@ workflows:
               only:
                 - master
     jobs:
-      - build-latest
       - build-1.18
       - build-1.17
 
 jobs:
   build-latest: &build-template
     docker:
-      - image: cimg/go:latest
+      - image: cimg/go
 
     steps:
       - checkout
