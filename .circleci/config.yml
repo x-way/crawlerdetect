@@ -3,8 +3,7 @@ workflows:
   version: 2
   build:
     jobs:
-      - build-latest
-      - build-1.16
+      - build-1.18
       - build-1.17
   scheduled:
     triggers:
@@ -15,14 +14,13 @@ workflows:
               only:
                 - master
     jobs:
-      - build-latest
-      - build-1.16
+      - build-1.18
       - build-1.17
 
 jobs:
   build-latest: &build-template
     docker:
-      - image: circleci/golang:latest
+      - image: cimg/go
 
     steps:
       - checkout
@@ -38,7 +36,9 @@ jobs:
       - run:
           name: staticcheck.io
           command: |
-                    go install honnef.co/go/tools/cmd/staticcheck@latest
+                    # go install honnef.co/go/tools/cmd/staticcheck@latest
+                    # workaround for go 1.18
+                    go install honnef.co/go/tools/cmd/staticcheck@23e1086441d24fed9f668ad1cd4374245118b590
                     staticcheck -checks all ./...
       - run:
           name: Check gofumpt formatting
@@ -74,12 +74,12 @@ jobs:
       - store_artifacts:
           path: /tmp/test-artifacts
 
-  build-1.16:
+  build-1.18:
     <<: *build-template
     docker:
-      - image: circleci/golang:1.16
+      - image: cimg/go:1.18
 
   build-1.17:
     <<: *build-template
     docker:
-      - image: circleci/golang:1.17
+      - image: cimg/go:1.17
