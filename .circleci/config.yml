@@ -36,7 +36,9 @@ jobs:
       - run:
           name: staticcheck.io
           command: |
-                    go install honnef.co/go/tools/cmd/staticcheck@latest
+                    # go install honnef.co/go/tools/cmd/staticcheck@latest
+                    # workaround for go 1.18
+                    go install honnef.co/go/tools/cmd/staticcheck@23e1086441d24fed9f668ad1cd4374245118b590
                     staticcheck -checks all ./...
       - run:
           name: Check gofumpt formatting
