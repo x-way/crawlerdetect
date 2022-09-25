@@ -75,9 +75,9 @@ jobs:
   build-1.18:
     <<: *build-template
     docker:
-      - image: cimg/go:1.18
+      - image: cimg/go:1.19
 
   build-1.17:
     <<: *build-template
     docker:
-      - image: cimg/go:1.17
+      - image: cimg/go:1.19
