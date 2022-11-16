@@ -3,20 +3,19 @@
 //
 // Here is a simple example
 //
-//     uastring := "curl/7.54.0"
-//     if crawlerdetect.IsCrawler(uastring) {
-//             fmt.Println("Found a crawler")
-//     }
+//	uastring := "curl/7.54.0"
+//	if crawlerdetect.IsCrawler(uastring) {
+//	        fmt.Println("Found a crawler")
+//	}
 //
 // To use custom patterns a dedicated instance can be created:
 //
-//     uastring := "curl/7.54.0"
-//     crawlerDetect := crawlerDetect.New()
-//     crawlerDetect.SetCrawlers([]string{`curl`})
-//     if crawlerDetect.IsCrawler(uastring) {
-//             fmt.Println("Found a crawler")
-//     }
-//
+//	uastring := "curl/7.54.0"
+//	crawlerDetect := crawlerDetect.New()
+//	crawlerDetect.SetCrawlers([]string{`curl`})
+//	if crawlerDetect.IsCrawler(uastring) {
+//	        fmt.Println("Found a crawler")
+//	}
 package crawlerdetect
 
 import (
