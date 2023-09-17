@@ -4,7 +4,7 @@ workflows:
   build:
     jobs:
       - build-1.20
-      - build-1.19
+      - build-1.21
   scheduled:
     triggers:
       - schedule:
@@ -15,7 +15,7 @@ workflows:
                 - master
     jobs:
       - build-1.20
-      - build-1.19
+      - build-1.21
 
 jobs:
   build-latest: &build-template
@@ -77,7 +77,7 @@ jobs:
     docker:
       - image: cimg/go:1.20
 
-  build-1.19:
+  build-1.21:
     <<: *build-template
     docker:
-      - image: cimg/go:1.19
+      - image: cimg/go:1.21
