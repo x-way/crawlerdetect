@@ -1,6 +1,6 @@
 package crawlerdetect
 
-// auto-generated based on https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/master/raw/Crawlers.txt
+// auto-generated based on https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/v1.2.116/raw/Crawlers.txt
 var crawlers = []string{
 	` YLT`,
 	`^Aether`,
@@ -407,6 +407,7 @@ var crawlers = []string{
 	`forensiq`,
 	`ForusP`,
 	`FoundSeoTool`,
+	`fragFINN\.de`,
 	`free thumbnails`,
 	`Freeuploader`,
 	`FreshRSS`,
@@ -465,6 +466,7 @@ var crawlers = []string{
 	`Google-Calendar-Importer`,
 	`Google-HotelAdsVerifier`,
 	`Google-HTTP-Java-Client`,
+	`Google-InspectionTool`,
 	`Google-Podcast`,
 	`Google-Publisher-Plugin`,
 	`Google-Read-Aloud`,
@@ -601,6 +603,7 @@ var crawlers = []string{
 	`intraVnews`,
 	`IODC`,
 	`IOI`,
+	`Inboxb0t`,
 	`iplabel`,
 	`ips-agent`,
 	`IPS\/[0-9]`,
@@ -1108,9 +1111,11 @@ var crawlers = []string{
 	`SpamExperts`,
 	`Spammen`,
 	`Spanner`,
+	`Spawning-AI`,
 	`spaziodati`,
 	`SPDYCheck`,
 	`Specificfeeds`,
+	`SpeedKit`,
 	`speedy`,
 	`SPEng`,
 	`Spinn3r`,
