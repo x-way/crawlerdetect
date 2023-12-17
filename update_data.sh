@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#VERSION="97e9fe30219e60092e107651abb379a38b342921"
+#VERSION="v1.2.116"
+VERSION="master"
+
 datafile(){
 	url="$1"
 	name="$2"
@@ -19,9 +23,9 @@ END{
 ' > "${name}.go"
 }
 echo "Updating crawlers.go"
-datafile "https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/master/raw/Crawlers.txt" "crawlers"
+datafile "https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/${VERSION}/raw/Crawlers.txt" "crawlers"
 echo "Updating exclusions.go"
-datafile "https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/master/raw/Exclusions.txt" "exclusions"
+datafile "https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/${VERSION}/raw/Exclusions.txt" "exclusions"
 
 echo "Patching files for re2 engine"
 # XXX: golang re2 based regex engine does not support negative lookahead Yandex(?!Search)
@@ -31,8 +35,8 @@ sed -i "" -e '/^}$/i\
 	`YandexSearch`,' exclusions.go
 
 echo "Updating testdata/crawlers.txt"
-curl --progress-bar -o testdata/crawlers.txt https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/master/tests/crawlers.txt
+curl --progress-bar -o testdata/crawlers.txt https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/${VERSION}/tests/crawlers.txt
 echo "Updating testdata/devices.txt"
-curl --progress-bar -o testdata/devices.txt https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/master/tests/devices.txt
+curl --progress-bar -o testdata/devices.txt https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/${VERSION}/tests/devices.txt
 
 echo "Updating completed"
