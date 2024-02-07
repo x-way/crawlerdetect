@@ -75,9 +75,9 @@ jobs:
   build-1.20:
     <<: *build-template
     docker:
-      - image: cimg/go:1.20
+      - image: cimg/go:1.22
 
   build-1.21:
     <<: *build-template
     docker:
-      - image: cimg/go:1.21
+      - image: cimg/go:1.22
