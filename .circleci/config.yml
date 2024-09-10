@@ -3,8 +3,7 @@ workflows:
   version: 2
   build:
     jobs:
-      - build-1.22
-      - build-1.21
+      - build
   scheduled:
     triggers:
       - schedule:
@@ -14,13 +13,12 @@ workflows:
               only:
                 - master
     jobs:
-      - build-1.22
-      - build-1.21
+      - build
 
 jobs:
-  build-latest: &build-template
+  build:
     docker:
-      - image: cimg/go
+      - image: cimg/go:1.23
 
     steps:
       - checkout
@@ -71,13 +69,3 @@ jobs:
           path: /tmp/test-reports
       - store_artifacts:
           path: /tmp/test-artifacts
-
-  build-1.22:
-    <<: *build-template
-    docker:
-      - image: cimg/go:1.22
-
-  build-1.21:
-    <<: *build-template
-    docker:
-      - image: cimg/go:1.21
