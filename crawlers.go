@@ -1004,6 +1004,7 @@ var crawlers = []string{
 	`RPT-HTTPClient`,
 	`RSSMix\/`,
 	`RSSOwl`,
+	`RuxitSynthetic`,
 	`RyowlEngine`,
 	`safe-agent-scanner`,
 	`SalesIntelligent`,
