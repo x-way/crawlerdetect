@@ -1,6 +1,6 @@
 package crawlerdetect
 
-// auto-generated based on https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/master/raw/Crawlers.txt
+// auto-generated based on https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/v1.3.0/raw/Crawlers.txt
 var crawlers = []string{
 	` YLT`,
 	`^Aether`,
