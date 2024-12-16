@@ -35,8 +35,8 @@ sed -i "" -e '/^}$/i\
 	`YandexSearch`,' exclusions.go
 
 echo "Updating testdata/crawlers.txt"
-curl --progress-bar -o testdata/crawlers.txt https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/${VERSION}/tests/crawlers.txt
+curl --progress-bar -o testdata/crawlers.txt https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/${VERSION}/tests/data/user_agent/crawlers.txt
 echo "Updating testdata/devices.txt"
-curl --progress-bar -o testdata/devices.txt https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/${VERSION}/tests/devices.txt
+curl --progress-bar -o testdata/devices.txt https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/${VERSION}/tests/data/user_agent/devices.txt
 
 echo "Updating completed"
