@@ -1,6 +1,6 @@
 package crawlerdetect
 
-// auto-generated based on https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/master/raw/Exclusions.txt
+// auto-generated based on https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/v1.3.0/raw/Exclusions.txt
 var exclusions = []string{
 	`Safari.[\d\.]*`,
 	`Firefox.[\d\.]*`,
@@ -52,5 +52,7 @@ var exclusions = []string{
 	`OCTOPUS-CORE`,
 	`htc_botdugls`,
 	`super\/\d+\/Android\/\d+`,
+	`"Yandex"`,
+	`YandexModule2`,
 	`YandexSearch`,
 }
