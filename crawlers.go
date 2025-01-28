@@ -1,6 +1,6 @@
 package crawlerdetect
 
-// auto-generated based on https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/v1.3.0/raw/Crawlers.txt
+// auto-generated based on https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/v1.3.1/raw/Crawlers.txt
 var crawlers = []string{
 	` YLT`,
 	`^Aether`,
@@ -205,6 +205,7 @@ var crawlers = []string{
 	`Butterfly\/`,
 	`BuzzSumo`,
 	`CAAM\/[0-9]`,
+	`caam dot crwlr at gmail dot com`,
 	`CakePHP`,
 	`Calculon`,
 	`Canary%20Mail`,
