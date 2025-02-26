@@ -1,6 +1,6 @@
 package crawlerdetect
 
-// auto-generated based on https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/v1.3.1/raw/Crawlers.txt
+// auto-generated based on https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/master/raw/Crawlers.txt
 var crawlers = []string{
 	` YLT`,
 	`^Aether`,
@@ -42,6 +42,7 @@ var crawlers = []string{
 	`^pnpm\/`,
 	`^RMA\/`,
 	`^Ruby|Ruby\/[0-9]`,
+	`^symbolicator\/`,
 	`^Swurl `,
 	`^TLS tester `,
 	`^twine\/`,
@@ -152,6 +153,7 @@ var crawlers = []string{
 	`Badass`,
 	`baidu\.com`,
 	`Bandit`,
+	`Barracuda Sentinel \(EE\)`,
 	`basicstate`,
 	`BatchFTP`,
 	`Battleztar Bazinga`,
@@ -654,6 +656,7 @@ var crawlers = []string{
 	`knows\.is`,
 	`KOCMOHABT`,
 	`kouio`,
+	`krawler\.dk`,
 	`kube-probe`,
 	`kubectl`,
 	`kulturarw3`,
@@ -712,6 +715,7 @@ var crawlers = []string{
 	`L\.webis`,
 	`mabontland`,
 	`MacOutlook\/`,
+	`MagentaNews\/`,
 	`Mag-Net`,
 	`MagpieRSS`,
 	`Mail::STS`,
@@ -728,6 +732,7 @@ var crawlers = []string{
 	`masscan\/`,
 	`Mata Hari`,
 	`mattermost`,
+	`MatchorySearch\/`,
 	`Mediametric`,
 	`Mediapartners-Google`,
 	`mediawords`,
