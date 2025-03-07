@@ -517,7 +517,6 @@ var crawlers = []string{
 	`Hatena`,
 	`Havij`,
 	`HaxerMen`,
-	`HeadlessChrome`,
 	`HEADMasterSEO`,
 	`HeartRails_Capture`,
 	`help@dataminr\.com`,
@@ -771,6 +770,7 @@ var crawlers = []string{
 	`Monitority\/`,
 	`Monit\/`,
 	`montastic`,
+	`MonSpark`,
 	`MonTools`,
 	`Moreover`,
 	`Morfeus Fucking Scanner`,
@@ -1418,5 +1418,5 @@ var crawlers = []string{
 	`Zoom\.Mac`,
 	`ZoteroTranslationServer`,
 	`ZyBorg`,
-	`[a-z0-9\-_]*(bot|crawl|archiver|transcoder|spider|uptime|validator|fetcher|cron|checker|reader|extractor|monitoring|analyzer|scraper)`,
+	`[a-z0-9\-_]*(bot|crawl|headless|archiver|transcoder|spider|uptime|validator|fetcher|cron|checker|reader|extractor|monitoring|analyzer|scraper)`,
 }
