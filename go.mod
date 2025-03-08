@@ -1,3 +1,3 @@
 module github.com/x-way/crawlerdetect
 
-go 1.23.5
+go 1.23.0
