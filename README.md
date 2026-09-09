@@ -1,7 +1,6 @@
 # crawlerdetect
 
 [![CircleCI](https://circleci.com/gh/x-way/crawlerdetect.svg?style=svg)](https://circleci.com/gh/x-way/crawlerdetect)
-[![Go Report Card](https://goreportcard.com/badge/github.com/x-way/crawlerdetect)](https://goreportcard.com/report/github.com/x-way/crawlerdetect)
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/x-way/crawlerdetect)](https://pkg.go.dev/github.com/x-way/crawlerdetect)
 
 ## About
