@@ -27,6 +27,23 @@
         "indirect"
       ],
       "enabled": true
+    },
+    {
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchUpdateTypes": [
+        "digest"
+      ],
+      "enabled": false
+    },
+    {
+      "matchManagers": [
+        "github-actions"
+      ],
+      "schedule": [
+        "before 5am on the first day of the month"
+      ]
     }
   ]
 }
